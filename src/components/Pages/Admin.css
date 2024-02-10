@@ -1,0 +1,161 @@
+  .admin-panel {
+    height: 100vh;
+    padding: 10px 20px;
+  }
+  
+  .admin-panel > div{
+    display: flex;
+    height: 100%;
+  }
+
+  .admin-panel h1{
+    margin-bottom:1rem;
+  }
+
+  .sidebar {
+    width: 200px;
+    background-color: #e6e1e1;
+    padding:20px 10px;
+    text-align: center;
+  }
+  
+  .sidebar button{
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(246, 240, 240);
+  }
+
+  .sidebar button:hover{
+    opacity: .7;
+  }
+
+  .main-window {
+    flex: 1;
+    padding: 20px;
+  }
+    
+  .button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 23px;
+  }
+  
+  .action-button {
+    width: 100px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .action-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .user-info{
+    height:2rem;
+    display: flex;
+    padding:20px 10px;
+    background-color: #5C5470;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .user-info > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .user-info p{
+    font-size: 1.2rem;
+  }
+
+  .personal-info{
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    background-color: #8c84a2;
+    right: 0;
+    left: 0;
+    top:66px;
+    border-radius: 0 0 10px 10px;
+    justify-content: flex-start;
+    z-index: 100;
+  }
+
+  .buttons{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .buttons button{
+    margin-left: 10px;
+  }
+
+  .personal-info >div{
+    display: flex;
+    border-radius: 10px;
+  }
+
+.personal-info > div p{
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #5C5470;
+}
+
+div.database-info p{
+  background-color: #62a3ea;
+  color: rgb(26, 24, 24);
+}
+
+@media (max-width:780px) {
+  .admin-panel >div{
+    flex-direction: column;
+  }
+}
+
+.add-user{
+  /* width:400px; */
+  position: fixed;
+  left: 30%;
+  right: 30%;
+  top: 20%;
+  background-color:rgb(33, 33, 69);
+  padding: 20px;
+  z-index: 100;
+}
+
+.add-user form{
+  display: flex;
+  flex-direction: column;
+}
+
+.add-user form input{
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.add-user form label{
+  margin-top: 10px;
+}
+
+.add-user form button{
+  background-color: #0056b3;
+  padding: 10px;
+  color: white;
+}
